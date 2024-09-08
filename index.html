@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        button {
+            width: 100px;
+            height: 40px;
+            margin: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .approve {
+            background-color: green;
+            color: white;
+        }
+        .reject {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Request Form for Office Use Azure IT</h1>
+        <div>
+            <button class="approve" onclick="closeWindow()">Approve</button>
+            <button class="reject" onclick="closeWindow()">Reject</button>
+        </div>
+    </div>
+
+    <script>
+        function closeWindow() {
+            window.close();
+        }
+    </script>
+</body>
+</html>
